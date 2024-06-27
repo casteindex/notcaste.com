@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <h1>{{ .Title | title }}</h1>
+  <ul class="bullet-post-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <li class="bullet-post-item">
+        <a class="post-list_title" href="{{ .Page.Permalink }}">{{ .Name }}</a>
+        <span class="term-list_count">{{ len .Pages }}</span>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

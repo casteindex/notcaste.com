@@ -1,0 +1,16 @@
+{{- $page := .page }}
+{{- $taxonomy := .taxonomy }}
+
+{{- with $page.GetTerms $taxonomy }}
+  {{- $label := (index . 0).Parent.LinkTitle }}
+  <div class="post-taxonomy">
+    {{ $label }}:&nbsp;
+    {{- $tags := . }}
+    {{- $numTags := len $tags }}
+    {{- range $i, $tag := $tags }}
+      {{- $lowercaseTag := lower $tag.LinkTitle -}}
+      <a href="{{ $tag.RelPermalink }}">#{{ $lowercaseTag }}</a>
+      {{- if lt $i (sub $numTags 1) }} {{ end -}}
+    {{- end }}
+  </div>
+{{- end }}

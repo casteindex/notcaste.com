@@ -1,0 +1,6 @@
+{{- with resources.Get "favicon.ico" -}}
+    {{- if .IsResourceType "image" -}}
+        {{- $favicon := . | fingerprint -}}
+        <link rel="icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon" integrity="{{ $favicon.Data.Integrity }}" crossorigin="anonymous">
+    {{- end -}}
+{{- end -}}

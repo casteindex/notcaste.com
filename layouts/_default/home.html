@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <h2 class="home-post-label">Latest posts</h2>
+  <ul class="bullet-post-list">
+    {{ range first 10 (where site.RegularPages "Type" "blog") }}
+      <li class="bullet-post-item"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+  </ul>
+{{ end }}

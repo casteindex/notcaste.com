@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor }}">
+  {{ .Text | safeHTML }}
+  <a class="anchor" href="#{{ .Anchor }}" aria-hidden="true" title="Anchor for {{ .Text }}">#</a>
+</h{{ .Level }}>

@@ -1,0 +1,23 @@
+{{ $linkedPosts := 0 }}
+{{ range .Site.AllPages }}
+  {{ if in .Content $.Page.RelPermalink }}
+    {{ $linkedPosts = add $linkedPosts 1 }}
+  {{ end }}
+{{ end }}
+
+{{ if gt $linkedPosts 0 }}
+  <div class="linked-references">
+    <h2 id="linked-references">
+      {{ $heading := cond (eq $linkedPosts 1) "link to this post" "links to this post" }}
+      {{ printf "%d %s" $linkedPosts $heading }}
+      <a class="anchor" href="#linked-references" aria-hidden="true" title="Anchor for linked references">#</a>
+    </h2>
+    <ul class="bullet-post-list">
+      {{ range .Site.AllPages.ByTitle }}
+        {{ if in .Content $.Page.RelPermalink }}
+          <li class="bullet-post-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

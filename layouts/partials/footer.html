@@ -1,0 +1,16 @@
+<footer class="footer content-grid">
+  <nav class="nav">
+    <span>
+      &copy; {{ now.Year }}&emsp;<a href="/privacy">Privacy</a>
+    </span>
+    <ul class="menu">
+      {{ range.Site.Menus.social -}}
+      <li>
+        <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
+          {{ partial "icon.html" (dict "icon" .Pre "title" .Name ) }}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+</footer>

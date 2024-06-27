@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{- if and .IsNode (eq .Section "tags") }}
+    <h1>Posts tagged "{{ lower .Title }}"</h1>
+  {{ else if and .IsNode (eq .Section "categories") }}
+    <h1>Category: {{ title .Title }}</h1>
+  {{ else }}
+    <h1>{{ .Title | title }}</h1>
+  {{ end }}
+  {{ .Content }}
+  <ul class="post-list">
+    {{ range .Pages }}
+      <li class="post-list_item">
+        <a class="post-list_title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <span class="post-list_date">{{ .Date.Format "Jan 2, 2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+ {{ end }}

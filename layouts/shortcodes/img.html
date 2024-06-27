@@ -1,0 +1,27 @@
+<!--
+	class: class of the figure
+	alt: alternative text
+	caption: caption
+  quality: quality of the converted webp image
+-->
+
+{{ $src := .Page.Resources.GetMatch (printf "%s" (.Get "src" | safeURL)) }}
+{{ if $src }}
+  {{ $newWidth := 960 }}
+  {{ $quality := .Get "quality" | default 90 }}
+  {{ $newHeight := div ($src.Height | mul $newWidth) $src.Width }}
+  {{ $webp := $src.Resize (printf "%dx%d webp q%d" $newWidth $newHeight $quality) }}
+  {{ $fallback := $src.Resize (printf "%dx%d q%d" $newWidth $newHeight $quality) }}
+
+  <figure class="{{ with .Get "class" }}{{.}}{{ else }}breakout{{ end }}">
+    <a href="{{ $src.Permalink }}">
+      <picture>
+        <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+        <img src="{{ $fallback.RelPermalink }}" alt="{{ with .Get "alt" }}{{.}}{{ else }}{{ $src.Name }}{{ end }}" loading="lazy" decoding="async" width="{{ $newWidth }}" height="{{ $newHeight }}" title="View original image">
+      </picture>
+    </a>
+    {{ with .Get "caption" -}}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end }}
+  </figure>
+{{ end }}

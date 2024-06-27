@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <div class="post-meta">
+    Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+  </div>
+  {{ partial "next_prev.html" . -}}
+  {{ partial "linked_references.html" . }}
+{{ end }}
