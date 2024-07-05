@@ -13,13 +13,13 @@ pageRef = '/blog'
 weight = 10
 
 [[menus.main]]
-name = 'Projects'
-pageRef = '/#'
+name = 'About'
+pageRef = '/about'
 weight = 15
 
 [[menus.main]]
-name = 'About'
-pageRef = '/about'
+name = 'Contact'
+pageRef = '/contact'
 weight = 20
 
 [[menus.social]]

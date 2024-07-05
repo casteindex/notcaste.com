@@ -1,7 +1,7 @@
 +++
-title = 'Hello World'
+title = 'Hello world'
 date = 2024-06-26T14:51:20-06:00
-tags = []
+tags = ["personal"]
 draft = false
 +++
 

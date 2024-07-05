@@ -1,29 +1,26 @@
 /* Variable Declarations */
 :root {
   /* prettier-ignore */
-  --base-font-size: clamp(1.03rem, 0.9824rem + 0.1905vi, 1.13rem); /* 16.48px → 18.08px */
+  --base-font-size: clamp(1.03rem, 0.99rem + 0.13vi, 1.1rem); /* 16.48px → 17.6px */
   --fs-400: var(--base-font-size);
   --fs-500: calc(1.2 * var(--fs-400));
   --fs-600: calc(1.2 * var(--fs-500));
   --fs-700: calc(1.2 * var(--fs-600));
   --fs-900: calc(1.44 * var(--fs-700));
 
-  --fs-100: calc(0.7 * var(--fs-400));
-  --fs-150: calc(0.75 * var(--fs-400));
+  --fs-100: calc(0.75 * var(--fs-400));
   --fs-200: calc(0.8 * var(--fs-400));
   --fs-300: calc(0.9 * var(--fs-400));
 
   --font-mono: monospace;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "InterDisplay", system-ui, sans-serif;
-  --line-height: 1.6;
-  --border-radius: 0.75em;
-  --border-radius-small: 0.25em;
+  --line-height: 1.7;
+  --border-radius: 0.25em;
 
   --clr-text: hsl(212, 13%, 16%);
   --clr-background: hsl(0, 0%, 100%);
-  --clr-gray-200: hsl(0, 0%, 98%);
-  --clr-gray-250: hsl(0, 0%, 95%);
+  --clr-gray-200: hsl(0, 0%, 99%);
   --clr-gray-300: hsl(212, 1%, 85%);
   --clr-gray-400: hsl(212, 2%, 65%);
   --clr-blue-400: hsl(212, 90%, 45%);
@@ -77,7 +74,7 @@ footer {
 
 /* prettier-ignore */
 .content-grid {
-  --padding-inline: 1rem;
+  --padding-inline: 1.2rem;
   --content-max-width: 660px;
   --breakout-max-width: 950px;
 
@@ -85,7 +82,11 @@ footer {
 
   display: grid;
   grid-template-columns:
-    minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr);
+    minmax(var(--padding-inline), 1fr)
+    [breakout-start] minmax(0, var(--breakout-size))
+    [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(var(--padding-inline), 1fr);
 }
 
 .content-grid > :not(.breakout) {
@@ -120,7 +121,7 @@ h1 {
   font-size: var(--fs-900);
   font-weight: 900;
   line-height: normal;
-  margin-top: 2.5em;
+  margin-top: 2.25em;
   font-feature-settings: normal;
 }
 
@@ -157,7 +158,7 @@ svg {
 }
 
 img {
-  border-radius: var(--border-radius);
+  border-radius: 0.5em;
 }
 
 figure,
@@ -253,7 +254,7 @@ pre {
   /* Default container for Code Blocks */
   overflow-x: auto;
   margin-top: 1em;
-  border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius);
 }
 
 pre {
@@ -268,12 +269,12 @@ pre {
   padding: 0.125em 0.25em;
   background-color: var(--clr-gray-200);
   border: 1px solid var(--clr-gray-300);
-  border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius);
 }
 
 /* Header */
 .header {
-  padding: 3.5rem 0 1rem;
+  padding: 2.5rem 0 1rem;
 }
 
 .nav {
@@ -307,12 +308,6 @@ pre {
   color: var(--clr-gray-400);
 }
 
-@media screen and (max-width: 700px) {
-  .header {
-    padding-top: 3rem;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .header {
     padding-top: 1.6rem;
@@ -332,11 +327,11 @@ pre {
 
 .footer > .nav {
   padding-block: 1.4em;
-  border-top: 1px solid var(--clr-gray-200);
+  border-top: 1px dotted var(--clr-gray-300);
 }
 
 .footer .menu {
-  column-gap: 0.5em;
+  column-gap: 0.75em;
 }
 
 .footer .menu a {
@@ -386,7 +381,7 @@ pre {
 /* Post metadata */
 .post-meta {
   font-size: var(--fs-300);
-  margin-top: 2em;
+  margin-top: 1.5em;
   color: var(--clr-gray-400);
 }
 
@@ -397,14 +392,14 @@ pre {
 /* Next and Previous articles */
 .next-prev {
   font-size: var(--fs-300);
-  margin-top: 3.5em;
+  margin-top: 4em;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75em 1em;
 }
 
 .next-prev_button {
-  padding: 0.75em; /* Rewrites button padding */
+  padding: 1em 0.75em;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 12em;
@@ -414,8 +409,6 @@ pre {
 /* Linked references */
 .linked-references > h2 {
   margin-top: 1.5em;
-  padding-top: 0.5em;
-  border-top: 2px solid var(--clr-gray-200);
 }
 
 /* Miscellaneous */
@@ -475,7 +468,7 @@ dt {
 }
 
 .post-list_item {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
 .post-list_title {
@@ -485,7 +478,7 @@ dt {
 
 .post-list_date {
   display: block;
-  font-size: var(--fs-150);
+  font-size: var(--fs-100);
   color: var(--clr-gray-400);
 }
 
