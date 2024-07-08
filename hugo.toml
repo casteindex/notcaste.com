@@ -48,10 +48,9 @@ weight = 30
         block = true
         title = true
   [markup.highlight]
-    style = 'catppuccin-macchiato'
+    style = 'catppuccin-latte'
 
 [module]
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
-

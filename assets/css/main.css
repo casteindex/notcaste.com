@@ -12,7 +12,7 @@
   --fs-200: calc(0.8 * var(--fs-400));
   --fs-300: calc(0.9 * var(--fs-400));
 
-  --font-mono: monospace;
+  --font-mono: "Consolas", monospace;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "InterDisplay", system-ui, sans-serif;
   --line-height: 1.7;
@@ -25,7 +25,7 @@
   --clr-gray-400: hsl(212, 2%, 65%);
   --clr-blue-400: hsl(212, 90%, 45%);
   --clr-blue-500: hsl(212, 90%, 38%);
-  --clr-code-background: hsl(212, 40%, 17%);
+  --clr-code-background: hsl(220, 23%, 95%);
 }
 
 /* Siolon.com CSS Browser reset */
@@ -241,34 +241,26 @@ code {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
 
-.highlight,
-pre {
-  background-color: var(--clr-code-background) !important;
-  max-width: 100%; /* Sets max width to 100% of content-grid */
-  width: auto;
+  font-family: var(--font-mono);
+  font-size: var(--fs-300);
 }
 
 .highlight {
   /* Default container for Code Blocks */
+  background-color: var(--clr-code-background); /* Match highlight theme */
+
   overflow-x: auto;
   margin-top: 1em;
   border-radius: var(--border-radius);
-}
-
-pre {
-  font-family: var(--font-mono);
-  font-size: var(--fs-300);
   padding: calc(0.75em * 1.2); /* fs-400 padding */
 }
 
 :not(pre) > code {
-  font-family: var(--font-mono);
   overflow-wrap: break-word;
-  padding: 0.125em 0.25em;
-  background-color: var(--clr-gray-200);
-  border: 1px solid var(--clr-gray-300);
+  padding: 0.1em 0.4em;
+  color: hsl(234, 16%, 35%); /* catppuccin-latte theme */
+  background-color: var(--clr-code-background);
   border-radius: var(--border-radius);
 }
 
@@ -395,7 +387,7 @@ pre {
   margin-top: 4em;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75em 1em;
+  gap: 1em;
 }
 
 .next-prev_button {
