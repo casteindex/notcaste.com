@@ -5,45 +5,43 @@ tags = ["excel"]
 draft = false
 +++
 
-The three most used methods to look up data from tables or ranges in Excel are: `VLOOKUP`, `INDEX MATCH`, and since Excel 2021, `XLOOKUP`. While these methods are powerful, they share a common limitation: they only allow for exact matches, or the preceding or next value present in the table. But what if we need intermediate values? How can we perform both lookup and interpolation at the same time?
+The three most used methods to look up data from tables or ranges in Excel are: `VLOOKUP`, `INDEX MATCH`, and since Excel 2021, `XLOOKUP`. While these functions are super useful, they share a common limitation: they only allow for exact matches, or the preceding or next value in the table. But what if we need intermediate values? How can we perform both lookup and interpolation at the same time?
+
+Say you have the following table:
+
+| A   | B   |
+| --- | --- |
+| 1   | 10  |
+| 2   | 20  |
+| 3   | 30  |
+
+With the lookup methods mentioned above, if your lookup value is `2.333`, you could get `20` as a result, or `30`, or an error. But what if you want to take the two neighboring numbers of lookup value (`2` and `3`) and their respective Y-values (`20` and `30`) to make an interpolation and get `23.33` as a result? Well, here's a very neat way to do this with just three Excel functions.
+
+## The formula
+
+For maximum compatibility:
+
+```s
+=FORECAST.LINEAR(
+    C1,
+    INDEX(B:B, MATCH(C1, A:A, 1) + {0, 1}),
+    INDEX(A:A, MATCH(C1, A:A, 1) + {0, 1})
+)
+```
+
+To avoid reduntant calculations, you can use this other version that uses `LET` (note that this will only work with Excel 2021 or newer versions):
+
+```s
+=LET(
+    rows, MATCH(C1, A:A, 1) + {0, 1},
+    x_values, INDEX(A:A, rows),
+    y_values, INDEX(B:B, rows),
+    FORECAST.LINEAR(C1, y_values, x_values)
+)
+```
 
 ## How it works
 
-The base of our formula will be the `FORECAST` or `FORECAST.LINEAR` function. This are Excel's built-in interpolation functions. They take three arguments: The data point for which you want to predict a value (in our case, the lookup value), the dependent array or range of data, and the independent array or range of data.
+First, we locate the position of the largest value that is less than or equal to lookup value with this: `MATCH(C1, A:A, 1)`.
 
-**Note:** According to Microsoft, the `FORECAST` function will eventually be deprecated. However, it is still available for backward compatibility[^1].
-
-In our case, independent array (known_x’s) will consist of the smallest value and the next largest value for a given lookup value.
-
-To obtain the previous value, `X0`, we will use `INDEX MATCH`, bout you can also use `XLOOKUP` (it might even be preferable if you’re sharing the file with other people, since its syntax is easier to understand). Check out [this blog post](https://www.ablebits.com/office-addins-blog/xlookup-vs-index-match-excel/) if you want to know more about the differences between the two methods.
-
-To obtain the next largest value, we can use the OFFSET function, given that the lookup column is sorted. We just need to set the `height` parameter to 2.
-
-## Formula
-
-If you are using Excel 2019 or older, or you want to ensure compatibility with these versions, use this formula:
-
-```c
-=FORECAST(
-  A1,
-  OFFSET(INDEX(Table1[X],MATCH(A1,Table1[X],1)),,1,2),
-  OFFSET(INDEX(Table1[X],MATCH(A1,Table1[X],1)),,,2)
-)
-```
-
-If you are are using Excel 2021 or recent, I suggest this other version:
-
-```c
-=LET(
-  X0,INDEX(Table1[X],MATCH(A1,Table1[X],1)),
-  KnownX,OFFSET(X0,,,2),
-  KnownY,OFFSET(X0,,1,2),
-  FORECAST.LINEAR(A1,KnownY,KnownX)
-)
-```
-
-The use of the `LET` function allows us to reuse the `X0` variable, which means that we only need to run `INDEX MATCH` once, increasing its performance. It also allows us to use local variables, which improve the readability of the formula, albeit making it slightly longer.
-
-## References
-
-[^1]: https://support.microsoft.com/en-us/office/forecast-and-forecast-linear-functions-50ca49c9-7b40-4892-94e4-7ad38bbeda99
+Now comes the clever part. Since `INDEX` can return arrays, we can use `+ {0, 1}` to return an array of just two numbers, the largest value before the lookup value and the smallest number after the lookup value. We do that for the `known_x's` and `known_y's` that the `FORECAST.LINEAR` function requires.

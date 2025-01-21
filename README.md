@@ -1,4 +1,4 @@
-# notcaste.com
+# [notcaste.com](https://notcaste.com/)
 
 This is the repo for my personal website :)
 

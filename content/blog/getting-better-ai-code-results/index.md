@@ -1,7 +1,7 @@
 +++
 title = 'Getting better AI code results'
 date = 2024-07-05T15:04:58-06:00
-tags = ["artificial intelligence", "productivity"]
+tags = ["ai", "productivity"]
 draft = false
 +++
 
