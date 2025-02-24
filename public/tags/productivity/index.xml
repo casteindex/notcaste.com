@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on NotCaste</title>
+    <link>http://localhost:1313/tags/productivity/</link>
+    <description>Recent content in Productivity on NotCaste</description>
+    <generator>Hugo</generator>
+    <language>es-us</language>
+    <lastBuildDate>Fri, 05 Jul 2024 15:04:58 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting better AI code results</title>
+      <link>http://localhost:1313/getting-better-ai-code-results/</link>
+      <pubDate>Fri, 05 Jul 2024 15:04:58 -0600</pubDate>
+      <guid>http://localhost:1313/getting-better-ai-code-results/</guid>
+      <description>&lt;p&gt;If you have used AI to generate code for any remotely niche technology, you must have quickly realized that AI is not magic, and it does not possess the answer to every problem.&lt;/p&gt;&#xA;&lt;p&gt;As an example, in the past couple of weeks I had been using AI to help me automate some repetitive tasks in AutoCAD. AutoCAD uses its own programming language derived from Lisp called &lt;a href=&#34;https://en.wikipedia.org/wiki/AutoLISP&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;AutoLisp&lt;/a&gt; which you can use to create custom commands.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
