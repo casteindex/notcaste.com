@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on NotCaste</title>
-    <link>http://localhost:1313/tags/personal/</link>
+    <link>http://192.168.1.15:1313/tags/personal/</link>
     <description>Recent content in Personal on NotCaste</description>
     <generator>Hugo</generator>
     <language>es-us</language>
     <lastBuildDate>Wed, 26 Jun 2024 14:51:20 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.15:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello world</title>
-      <link>http://localhost:1313/hello-world/</link>
+      <link>http://192.168.1.15:1313/hello-world/</link>
       <pubDate>Wed, 26 Jun 2024 14:51:20 -0600</pubDate>
-      <guid>http://localhost:1313/hello-world/</guid>
+      <guid>http://192.168.1.15:1313/hello-world/</guid>
       <description>&lt;p&gt;Thanks for passing by.&lt;/p&gt;&#xA;&lt;p&gt;This first post mainly serves to help me check if everything is working properly, but also as an introduction piece.&lt;/p&gt;&#xA;&lt;p&gt;I am currently learning about web development and plan on this website to be a blend of a blog and a portfolio. I will probably use this platform to strengthen my knowledge through teaching, but I am also a mechanical engineer, so hopefully not all posts are going to be amateur ramblings. I hope that these two interests of mine bring out something innovative, that can inspire some idea to whoever is reading this.&lt;/p&gt;</description>
     </item>
   </channel>

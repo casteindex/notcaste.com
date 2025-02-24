@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on NotCaste</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>http://192.168.1.15:1313/blog/</link>
     <description>Recent content in Blogs on NotCaste</description>
     <generator>Hugo</generator>
     <language>es-us</language>
     <lastBuildDate>Sun, 23 Feb 2025 22:14:54 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.15:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C/C&#43;&#43; formato automático en Visual Studio</title>
-      <link>http://localhost:1313/c/c-formato-autom%C3%A1tico-en-visual-studio/</link>
+      <link>http://192.168.1.15:1313/formato-automatico-visual-studio/</link>
       <pubDate>Sun, 23 Feb 2025 22:14:54 -0600</pubDate>
-      <guid>http://localhost:1313/c/c-formato-autom%C3%A1tico-en-visual-studio/</guid>
+      <guid>http://192.168.1.15:1313/formato-automatico-visual-studio/</guid>
       <description>&lt;p&gt;ClangFormat es una herramienta para formatear código de C/C++ automáticamente. Nos ayuda a mantener un estilo consistente en nuestros archivos y a no tener que procuparnos por el orden, indentar correctamente, espacios, etc.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cómo-activarlo-en-visual-studio&#34;&gt;&#xD;&#xA;  ¿Cómo activarlo en Visual Studio?&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c%c3%b3mo-activarlo-en-visual-studio&#34; aria-hidden=&#34;true&#34; title=&#34;Anchor for ¿Cómo activarlo en Visual Studio?&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Abrir Visual Studio&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ir al menú de Opciones&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hacer clic en &lt;strong&gt;Herramientas&lt;/strong&gt; en la barra de menú en la parte superior de la ventana.&lt;/li&gt;&#xA;&lt;li&gt;En el menú desplegable, seleccionar &lt;strong&gt;Opciones&amp;hellip;&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Navegar a las opciones de formato de C++&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Excel volatile functions</title>
-      <link>http://localhost:1313/excel-volatile-functions/</link>
+      <link>http://192.168.1.15:1313/excel-volatile-functions/</link>
       <pubDate>Mon, 20 Jan 2025 18:24:28 -0600</pubDate>
-      <guid>http://localhost:1313/excel-volatile-functions/</guid>
-      <description>&lt;p&gt;Since I worte my &lt;a href=&#34;http://localhost:1313/excel-interpolation-lookup-formula/&#34;&gt;previous post&lt;/a&gt;, I learned about the concept of volatile functions in Excel, which has made me change many of the formulas that I use everyday, inluding the one discussed in that post.&lt;/p&gt;&#xA;&lt;p class=&#34;note&#34;&gt;&amp;#x1f4dd; &lt;strong&gt;Note:&lt;/strong&gt; The previous post has now been updated and the formula that I recommend there no longer uses volatile functions.&lt;/p&gt;&#xA;&lt;p&gt;Cells that contain volatile functions get recalculated every time that Excel recalculates (basically, every time you hit Enter). Therefore, they should be avoided when possible.&lt;/p&gt;</description>
+      <guid>http://192.168.1.15:1313/excel-volatile-functions/</guid>
+      <description>&lt;p&gt;Since I worte my &lt;a href=&#34;http://192.168.1.15:1313/excel-interpolation-lookup-formula/&#34;&gt;previous post&lt;/a&gt;, I learned about the concept of volatile functions in Excel, which has made me change many of the formulas that I use everyday, inluding the one discussed in that post.&lt;/p&gt;&#xA;&lt;p class=&#34;note&#34;&gt;&amp;#x1f4dd; &lt;strong&gt;Note:&lt;/strong&gt; The previous post has now been updated and the formula that I recommend there no longer uses volatile functions.&lt;/p&gt;&#xA;&lt;p&gt;Cells that contain volatile functions get recalculated every time that Excel recalculates (basically, every time you hit Enter). Therefore, they should be avoided when possible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Excel interpolation-lookup formula</title>
-      <link>http://localhost:1313/excel-interpolation-lookup-formula/</link>
+      <link>http://192.168.1.15:1313/excel-interpolation-lookup-formula/</link>
       <pubDate>Mon, 08 Jul 2024 16:30:13 -0600</pubDate>
-      <guid>http://localhost:1313/excel-interpolation-lookup-formula/</guid>
+      <guid>http://192.168.1.15:1313/excel-interpolation-lookup-formula/</guid>
       <description>&lt;p&gt;The three most used methods to look up data from tables or ranges in Excel are: &lt;code&gt;VLOOKUP&lt;/code&gt;, &lt;code&gt;INDEX MATCH&lt;/code&gt;, and since Excel 2021, &lt;code&gt;XLOOKUP&lt;/code&gt;. While these functions are super useful, they share a common limitation: they only allow for exact matches, or the preceding or next value in the table. But what if we need intermediate values? How can we perform both lookup and interpolation at the same time?&lt;/p&gt;&#xA;&lt;p&gt;Say you have the following table:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting better AI code results</title>
-      <link>http://localhost:1313/getting-better-ai-code-results/</link>
+      <link>http://192.168.1.15:1313/getting-better-ai-code-results/</link>
       <pubDate>Fri, 05 Jul 2024 15:04:58 -0600</pubDate>
-      <guid>http://localhost:1313/getting-better-ai-code-results/</guid>
+      <guid>http://192.168.1.15:1313/getting-better-ai-code-results/</guid>
       <description>&lt;p&gt;If you have used AI to generate code for any remotely niche technology, you must have quickly realized that AI is not magic, and it does not possess the answer to every problem.&lt;/p&gt;&#xA;&lt;p&gt;As an example, in the past couple of weeks I had been using AI to help me automate some repetitive tasks in AutoCAD. AutoCAD uses its own programming language derived from Lisp called &lt;a href=&#34;https://en.wikipedia.org/wiki/AutoLISP&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;AutoLisp&lt;/a&gt; which you can use to create custom commands.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello world</title>
-      <link>http://localhost:1313/hello-world/</link>
+      <link>http://192.168.1.15:1313/hello-world/</link>
       <pubDate>Wed, 26 Jun 2024 14:51:20 -0600</pubDate>
-      <guid>http://localhost:1313/hello-world/</guid>
+      <guid>http://192.168.1.15:1313/hello-world/</guid>
       <description>&lt;p&gt;Thanks for passing by.&lt;/p&gt;&#xA;&lt;p&gt;This first post mainly serves to help me check if everything is working properly, but also as an introduction piece.&lt;/p&gt;&#xA;&lt;p&gt;I am currently learning about web development and plan on this website to be a blend of a blog and a portfolio. I will probably use this platform to strengthen my knowledge through teaching, but I am also a mechanical engineer, so hopefully not all posts are going to be amateur ramblings. I hope that these two interests of mine bring out something innovative, that can inspire some idea to whoever is reading this.&lt;/p&gt;</description>
     </item>
   </channel>

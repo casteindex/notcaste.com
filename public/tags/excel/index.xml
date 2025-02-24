@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Excel on NotCaste</title>
-    <link>http://localhost:1313/tags/excel/</link>
+    <link>http://192.168.1.15:1313/tags/excel/</link>
     <description>Recent content in Excel on NotCaste</description>
     <generator>Hugo</generator>
     <language>es-us</language>
     <lastBuildDate>Mon, 20 Jan 2025 18:24:28 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.15:1313/tags/excel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Excel volatile functions</title>
-      <link>http://localhost:1313/excel-volatile-functions/</link>
+      <link>http://192.168.1.15:1313/excel-volatile-functions/</link>
       <pubDate>Mon, 20 Jan 2025 18:24:28 -0600</pubDate>
-      <guid>http://localhost:1313/excel-volatile-functions/</guid>
-      <description>&lt;p&gt;Since I worte my &lt;a href=&#34;http://localhost:1313/excel-interpolation-lookup-formula/&#34;&gt;previous post&lt;/a&gt;, I learned about the concept of volatile functions in Excel, which has made me change many of the formulas that I use everyday, inluding the one discussed in that post.&lt;/p&gt;&#xA;&lt;p class=&#34;note&#34;&gt;&amp;#x1f4dd; &lt;strong&gt;Note:&lt;/strong&gt; The previous post has now been updated and the formula that I recommend there no longer uses volatile functions.&lt;/p&gt;&#xA;&lt;p&gt;Cells that contain volatile functions get recalculated every time that Excel recalculates (basically, every time you hit Enter). Therefore, they should be avoided when possible.&lt;/p&gt;</description>
+      <guid>http://192.168.1.15:1313/excel-volatile-functions/</guid>
+      <description>&lt;p&gt;Since I worte my &lt;a href=&#34;http://192.168.1.15:1313/excel-interpolation-lookup-formula/&#34;&gt;previous post&lt;/a&gt;, I learned about the concept of volatile functions in Excel, which has made me change many of the formulas that I use everyday, inluding the one discussed in that post.&lt;/p&gt;&#xA;&lt;p class=&#34;note&#34;&gt;&amp;#x1f4dd; &lt;strong&gt;Note:&lt;/strong&gt; The previous post has now been updated and the formula that I recommend there no longer uses volatile functions.&lt;/p&gt;&#xA;&lt;p&gt;Cells that contain volatile functions get recalculated every time that Excel recalculates (basically, every time you hit Enter). Therefore, they should be avoided when possible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Excel interpolation-lookup formula</title>
-      <link>http://localhost:1313/excel-interpolation-lookup-formula/</link>
+      <link>http://192.168.1.15:1313/excel-interpolation-lookup-formula/</link>
       <pubDate>Mon, 08 Jul 2024 16:30:13 -0600</pubDate>
-      <guid>http://localhost:1313/excel-interpolation-lookup-formula/</guid>
+      <guid>http://192.168.1.15:1313/excel-interpolation-lookup-formula/</guid>
       <description>&lt;p&gt;The three most used methods to look up data from tables or ranges in Excel are: &lt;code&gt;VLOOKUP&lt;/code&gt;, &lt;code&gt;INDEX MATCH&lt;/code&gt;, and since Excel 2021, &lt;code&gt;XLOOKUP&lt;/code&gt;. While these functions are super useful, they share a common limitation: they only allow for exact matches, or the preceding or next value in the table. But what if we need intermediate values? How can we perform both lookup and interpolation at the same time?&lt;/p&gt;&#xA;&lt;p&gt;Say you have the following table:&lt;/p&gt;</description>
     </item>
   </channel>

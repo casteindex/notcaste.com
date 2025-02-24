@@ -25,7 +25,7 @@ ClangFormat es una herramienta para formatear código de C/C++ automáticamente.
 
 4. **Habilitar ClangFormat**:
     - Asegurarse de que la opción de **Habilita la compatibilidad con ClangFormat** esté activada.
-    - Definir un **Estilo de formato predeterminado**. Yo recomiendo el de Google porque es muy opinionado.
+    - Definir un **Estilo de formato predeterminado**. A mí me gusta el de Google porque es el más estricto y conciso.
 
 ## Funcionamiento Automático
 

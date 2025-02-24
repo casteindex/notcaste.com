@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on NotCaste</title>
-    <link>http://localhost:1313/tags/programming/</link>
+    <link>http://192.168.1.15:1313/tags/programming/</link>
     <description>Recent content in Programming on NotCaste</description>
     <generator>Hugo</generator>
     <language>es-us</language>
     <lastBuildDate>Sun, 23 Feb 2025 22:14:54 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.15:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C/C&#43;&#43; formato automático en Visual Studio</title>
-      <link>http://localhost:1313/formato-automatico-visual-studio/</link>
+      <link>http://192.168.1.15:1313/formato-automatico-visual-studio/</link>
       <pubDate>Sun, 23 Feb 2025 22:14:54 -0600</pubDate>
-      <guid>http://localhost:1313/formato-automatico-visual-studio/</guid>
+      <guid>http://192.168.1.15:1313/formato-automatico-visual-studio/</guid>
       <description>&lt;p&gt;ClangFormat es una herramienta para formatear código de C/C++ automáticamente. Nos ayuda a mantener un estilo consistente en nuestros archivos y a no tener que procuparnos por el orden, indentar correctamente, espacios, etc.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cómo-activarlo-en-visual-studio&#34;&gt;&#xD;&#xA;  ¿Cómo activarlo en Visual Studio?&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c%c3%b3mo-activarlo-en-visual-studio&#34; aria-hidden=&#34;true&#34; title=&#34;Anchor for ¿Cómo activarlo en Visual Studio?&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Abrir Visual Studio&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ir al menú de Opciones&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hacer clic en &lt;strong&gt;Herramientas&lt;/strong&gt; en la barra de menú en la parte superior de la ventana.&lt;/li&gt;&#xA;&lt;li&gt;En el menú desplegable, seleccionar &lt;strong&gt;Opciones&amp;hellip;&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Navegar a las opciones de formato de C++&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>

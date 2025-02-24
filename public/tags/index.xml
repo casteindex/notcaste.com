@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on NotCaste</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://192.168.1.15:1313/tags/</link>
     <description>Recent content in Tags on NotCaste</description>
     <generator>Hugo</generator>
     <language>es-us</language>
     <lastBuildDate>Sun, 23 Feb 2025 22:14:54 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.15:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cpp</title>
-      <link>http://localhost:1313/tags/cpp/</link>
+      <link>http://192.168.1.15:1313/tags/cpp/</link>
       <pubDate>Sun, 23 Feb 2025 22:14:54 -0600</pubDate>
-      <guid>http://localhost:1313/tags/cpp/</guid>
+      <guid>http://192.168.1.15:1313/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>http://192.168.1.15:1313/tags/programming/</link>
       <pubDate>Sun, 23 Feb 2025 22:14:54 -0600</pubDate>
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>http://192.168.1.15:1313/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Excel</title>
-      <link>http://localhost:1313/tags/excel/</link>
+      <link>http://192.168.1.15:1313/tags/excel/</link>
       <pubDate>Mon, 20 Jan 2025 18:24:28 -0600</pubDate>
-      <guid>http://localhost:1313/tags/excel/</guid>
+      <guid>http://192.168.1.15:1313/tags/excel/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>http://192.168.1.15:1313/tags/ai/</link>
       <pubDate>Fri, 05 Jul 2024 15:04:58 -0600</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://192.168.1.15:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>http://localhost:1313/tags/productivity/</link>
+      <link>http://192.168.1.15:1313/tags/productivity/</link>
       <pubDate>Fri, 05 Jul 2024 15:04:58 -0600</pubDate>
-      <guid>http://localhost:1313/tags/productivity/</guid>
+      <guid>http://192.168.1.15:1313/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>http://localhost:1313/tags/personal/</link>
+      <link>http://192.168.1.15:1313/tags/personal/</link>
       <pubDate>Wed, 26 Jun 2024 14:51:20 -0600</pubDate>
-      <guid>http://localhost:1313/tags/personal/</guid>
+      <guid>http://192.168.1.15:1313/tags/personal/</guid>
       <description></description>
     </item>
   </channel>
